@@ -15,17 +15,19 @@
   <meta name="apple-mobile-web-app-title" content="Expedição" />
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/styles.css" />
-  <link rel="stylesheet" href="./css/theme.css" />
+  
+  <!-- CSS Corrigido (apontando para a raiz) -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./theme.css" />
 
   <!-- Bibliotecas -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-  <!-- Configuração e Firebase (o módulo é diferido; app.js trata o evento "fb-ready") -->
-  <script src="./js/emailjs-config.js"></script>
-  <script type="module" src="./js/firebase-init.js"></script>
+  <!-- Configuração e Firebase Corrigidos (apontando para a raiz) -->
+  <script src="./emailjs-config.js"></script>
+  <script type="module" src="./firebase-init.js"></script>
 </head>
 <body>
 
@@ -494,7 +496,9 @@
 
 <!-- TOAST -->
 <div class="toast-container" id="toast-container"></div>
-<script src="./js/app.js"></script>
-<script src="./js/pwa.js"></script>
+
+<!-- Scripts Corrigidos (apontando para a raiz) -->
+<script src="./app.js"></script>
+<script src="./pwa.js"></script>
 </body>
 </html>
